@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SC3 Frozen Foods</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="loginform">
+        <div class="wrapper">
+            <main>
+                <form action="processing.php" method="post">
+                    <h3>Create an Account</h3>
+                    <p>Please enter your credentials to create an account.</p>
+                    <!-- Name -->
+                    <div class="gaps">
+                        <div class="form-row">
+                            <input type="text" name="firstName" id="firstNameInput" placeholder="first name*">
+                        </div>
+                            <!-- Last Name -->
+                        <div class="form-row">                            
+                            <input 
+                                type="text" name="lastName" id="lastNameInput" placeholder="last name*">
+                        </div>
+                    </div>
+                    <div class="gaps">
+                        <div class="form-row">
+                            <input type="text" name="userName" id="userNameInput" placeholder="username*">
+                        </div>
+                        <!-- Phone Number
+                        <div class="form-row">
+                            <input type=”tel” pattern=”[+]{1}[0-9]{11,14}” placeholder="phone number*" required>
+                        </div> -->
+                        <!-- Email -->
+                        <div class="form-row">
+                            <input type="text" name="email" id="emailInput" placeholder="email*">
+                        </div>
+                    </div>
+                    <div class="gaps">
+                        <!-- Password -->
+                        <div class="form-row">
+                            <input type="password" id="pwd" name="pwd" placeholder="password*">
+                        </div>
+                        <!-- Confirm Password -->
+                        <div class="form-row">
+                            <input type="password" id="pwd" name="pwd" placeholder="confirm password*">
+                        </div>
+                    </div>
+                    <!-- Checkbox -->
+                    <div class="check-row">
+                        <div class="spacer"></div>
+                        <input type="checkbox" name="agree" value="on">
+                        <label>I agree on creating this account.</label>
+                    </div>
+                    <!-- Submit -->
+                    <div class="form-row">
+                        <div class="spacer"></div>
+                        <input type="submit" value="Sign Up"> 
+                    </div>
+                    <p>If you have created an account, click <a href="accountloginpage.html">here</a></p>
+                </form>  
+            </main>
+        </div> 
+        <footer>
+            <p>&copy; 2022, Sidney Clark Ordonia</p>
+        </footer>
+    </body>
+</html>

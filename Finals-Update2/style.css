@@ -1,0 +1,278 @@
+header {
+    padding: 15px;
+    text-align: center;
+    background-color: #51A038;
+    color: #DBE2D9;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto; 
+    background-color: #DBE2D9;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    background: #DBE2D9;
+}
+
+nav a {
+    color: #145200;
+    padding: 10px;
+    width: 260px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: space-between;
+    transition: background-color 0.2s ease-in-out;
+}
+
+a:hover {
+    background-color: #145200;
+    color: #DBE2D9;
+}
+
+.current {
+    background-color: #576452;
+    color: #DBE2D9;
+}
+
+.asidemain {
+    display: flex;
+    gap: 30px;
+}
+
+.asiders, #about {
+    flex: 30%;
+    margin: 0 15px;
+}
+
+.index {
+    flex: 80%;
+    flex-direction: column;
+    width: 100%;
+}
+
+#posts {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+
+}
+
+main {
+    margin: 0 10px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #DBE2D9;
+    height: 3rem;
+}
+
+/* Page content */
+
+.page-content {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* table */
+.table {
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+}
+
+
+/* Home Page */
+.banner {
+    width: 400px;
+    height: 300px;
+}
+
+
+/* About page */
+#Home {
+    margin-top: 50px;
+    float: right;
+    box-shadow: 3px 3px 5px #000;
+    width: 500px;
+    text-align: center;
+}
+
+.Home {
+    width: 100%;
+}
+
+/* Cards */
+
+.lots-of-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 3px 3px 5px #000;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    min-width: 0;
+    width: 215px;
+    border-radius: 0.5rem 0.5rem 0 0;
+    justify-content: space-evenly;
+}
+
+.card-body {
+    margin: 0 5px 5px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 15px;
+    text-align: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-body a {
+    background-color: blue;
+    border-radius: 3px 3px 3px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* Tables */
+
+table {
+    text-align: center;
+    border: thin solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 20px;
+    caption-side: bottom;
+}
+
+table td, table th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Wrapperist */
+
+.wrapper {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* Style Form */
+
+.loginform {
+    margin: 100px auto;
+}
+
+main form {
+    background-color: #ffffff;
+    box-shadow: 7px 7px 7px #51A038;
+    padding: 20px 20px;
+    width: 450px;
+}
+
+.form-row, .check-row {
+    display: block;
+    margin: 10px 0;
+}
+
+.form-row input {
+    padding: 15px;
+    width: 200px;
+
+}
+
+input:not([type='submit']), select, textarea {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 3px;
+
+}
+
+input:not([type='submit']):focus, select:focus, textarea:focus {
+    background-color: #DBE2D9;
+}
+
+input[type='submit'] {
+    padding: 8px;
+    width: auto;
+}
+
+
+.spacer {
+    width: 15%;
+}
+
+.check-row, .spacer {
+    text-align: center;
+}
+
+.gaps {
+    display: flex;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+        
+        .page-content {
+            width: auto;
+        }
+
+        .wrapper {
+            width: 75%;
+        }
+
+        nav {
+            flex-direction: column;
+        }
+
+        nav a {
+            width: auto;
+        }
+        .asidemain {
+            flex-direction: column-reverse;
+        }
+
+        main {
+            align-items: center;
+        }
+
+        .banner {
+            width: 100%;
+        }
+
+        .card {
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #Home, iframe {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+}
